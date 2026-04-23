@@ -40,20 +40,20 @@ R version 4.4.3
 ```
 .
 ├── FG/                                         # Fine-Gray model
-│   ├── main_fg.r                               # Model training
-│   ├── optim_fg_backward_eliminate_custom_penalty.r  # Variable selection
+│   ├── main_fg.r                               # Model fitting
+│   ├── optim_fg_backward_eliminate_custom_penalty.r  # Model training
 │   ├── eval_fg_boot.r                          # Bootstrap evaluation
-│   ├── fg_conditional_perm_vimp_tdAUC.r        # Variable importance (tdAUC)
+│   ├── fg_conditional_perm_vimp_tdAUC.r        # Variable importance (tdAUROC)
 │   ├── fg_conditional_perm_vimp_cindex.r       # Variable importance (C-index)
-│   ├── compute_sHR.r                           # Subdistribution hazard ratio
+│   ├── compute_sHR.r                           # Subdistribution hazard ratio statistical analysis
 │   ├── plus_ald_subanalysis.r                  # ALD subgroup analysis
 │   └── plus_ald_subanalysis_boot.r             # ALD subgroup bootstrap
 │
 ├── RSF/                                        # Random Survival Forest model
-│   ├── main_rsf.r                              # Model training
-│   ├── optim_rsf_backward_eliminate.r          # Variable selection
+│   ├── main_rsf.r                              # Model fitting
+│   ├── optim_rsf_backward_eliminate.r          # Model training
 │   ├── eval_rsf_boot.r                         # Bootstrap evaluation
-│   ├── rsf_conditional_perm_vimp_tdAUC.r       # Variable importance (tdAUC)
+│   ├── rsf_conditional_perm_vimp_tdAUC.r       # Variable importance (tdAUROC)
 │   ├── rsf_conditional_perm_vimp_cindex.r      # Variable importance (C-index)
 │   └── minus_ald_subanalysis.r                 # ALD subgroup analysis
 │
@@ -61,10 +61,10 @@ R version 4.4.3
 ├── main_{milan,mt2,uts}_external.r             # External validation (criteria-based models)
 ├── eval_{milan,mt2,uts}_boot.r                 # Bootstrap eval for criteria models
 ├── calibration_curves_5models.r                # Calibration curves
-├── auroc_comparison_figure.r                   # tdAUC comparison figure
+├── auroc_comparison_figure.r                   # tdAUROC comparison figure
 ├── pairwise_bootstrap_comparison_figure.r      # Pairwise p-value heatmap
 ├── plot_ext_ROC_curve.r                        # External ROC curves
-├── plot_conditional_perm_vimp_tdAUC.r          # Unified VIMP plot (tdAUC)
+├── plot_conditional_perm_vimp_tdAUC.r          # Unified VIMP plot (tdAUROC)
 ├── plot_conditional_perm_vimp_cindex.r         # Unified VIMP plot (C-index)
 ├── create_nomogram.r                           # Nomogram for FG model
 ├── wolbers_cindex_cr_claude.r                  # Wolbers C-index for competing risks
@@ -76,7 +76,8 @@ R version 4.4.3
 
 The clinical dataset used in this study contains patient-level information and **cannot be shared publicly** due to patient privacy regulations and institutional data governance policies.
 
-For data access inquiries, please contact the corresponding author.
+For data access inquiries, please contact the corresponding authors.
+
 
 ### Input Variables (n=39)
 
@@ -156,7 +157,7 @@ For data access inquiries, please contact the corresponding author.
 ### 1. Model Training
 
 ```r
-# Fine-Gray model
+# Fine-Gray model 
 source("FG/main_fg.r")
 
 # RSF model
@@ -166,10 +167,10 @@ source("RSF/main_rsf.r")
 ### 2. Variable Selection
 
 ```r
-# Fine-Gray: penalized backward elimination
+# Fine-Gray: FG training with custom penalized backward elimination 
 source("FG/optim_fg_backward_eliminate_custom_penalty.r")
 
-# RSF: backward elimination
+# RSF: RSF training with backward elimination
 source("RSF/optim_rsf_backward_eliminate.r")
 ```
 
@@ -183,7 +184,7 @@ source("generate_bootstrap_indices.r")
 source("FG/eval_fg_boot.r")
 source("RSF/eval_rsf_boot.r")
 
-# Criteria-based models (Milan, UCSF MT2.0, UpToSeven)
+# Criteria-based models (Milan, MT2.0, UpToSeven)
 source("eval_milan_boot.r")
 source("eval_mt2.0_boot.r")
 source("eval_uts_boot.r")
