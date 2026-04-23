@@ -11,7 +11,7 @@
 This repository contains the R code used to develop and validate the **LT-RADS model**, a competing risks-based survival prediction framework for HCC-related mortality following liver transplantation (LT). Pre-transplant clinical and LI-RADS imaging data were collected from LT recipients, and competing risk models were applied to predict HCC-specific mortality under the competing event of non-HCC death.
 
 Two model classes were developed and compared:
-- **Fine-Gray (FG)** subdistribution hazard regression
+- **Fine-Gray (FG)** proportional subdistribution hazard model
 - **Random Survival Forest (RSF)** with competing risks
 
 ---
