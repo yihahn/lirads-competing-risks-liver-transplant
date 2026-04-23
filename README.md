@@ -66,7 +66,6 @@ R version 4.4.3
 ├── plot_conditional_perm_vimp_cindex.r         # Unified VIMP plot (C-index)
 ├── create_nomogram.r                           # Nomogram for FG model
 ├── wolbers_cindex_cr_claude.r                  # Wolbers C-index for competing risks
-└── pval_*.csv / calibration_metrics_*.csv      # Aggregate statistical results
 ```
 
 ---
