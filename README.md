@@ -1,6 +1,8 @@
-# Development and Validation of a LI-RADS-Based Competing Risks Framework for Predicting Survival in HCC Liver Transplant Recipients: The LT-RADS Model
+# Short title: LI-RADS-Based Competing Risks in Liver Transplant
 
+> Full title and manuscript details will be disclosed upon journal acceptance.
 > **Manuscript in preparation** — Code is provided for reproducibility purposes.
+
 
 ---
 
