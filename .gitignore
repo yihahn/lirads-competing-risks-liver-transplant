@@ -1,0 +1,8 @@
+# Synology NAS system directory
+@eaDir/
+
+# R data objects - may contain patient-level data
+*.rds
+
+# OS
+.DS_Store

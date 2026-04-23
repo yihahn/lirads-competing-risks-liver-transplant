@@ -1,0 +1,210 @@
+=== Fine-Gray Penalized Backward Elimination Results ===
+
+INITIAL BASELINE:
+Raw C-index: 0.7056 (±0.0284)
+Penalized Score: 0.5857
+Variables (39): lr_5_ct, lr_tr_v_ct, lr_3_ct, lr_4_ct, lr_m_ct, lr_tr_nv_ct, lr_tr_e_ct, log_lr_5_size_ct, log_lr_tr_v_size_whole_ct, log_lr_tr_v_size_enhancing_ct, log_lr_3_size_ct, log_lr_4_size_ct, log_lr_m_size_ct, log_lr_tr_nv_size_ct, log_lr_tr_e_size_ct, log_afp, log_pivka, alb, log_tbil, cr, log_pt_inr, na, log_crp, age_lt, bmi, sex, diabetes, ckd_hd, hbv, hcv, image_lc, ald, masld, ldlt, pre_tx, tace, rfa, resection, rtx
+
+FINAL BEST MODEL (PENALIZED APPROACH):
+Raw C-index: 0.7606 (±0.0340)
+Penalized Score: 0.7302
+Found at iteration: 30
+Variables (9): log_lr_5_size_ct, log_lr_tr_v_size_enhancing_ct, log_lr_m_size_ct, log_lr_tr_nv_size_ct, log_afp, log_pivka, log_pt_inr, sex, ckd_hd
+
+PENALTY ANALYSIS:
+Penalty method: liberal
+Variable penalty: 0.0270
+Variance penalty: 0.0034
+Total penalty: 0.0304
+
+ITERATION DETAILS:
+Iteration 1:
+  Raw C-index: 0.7115 (±0.0332)
+  Penalized Score: 0.5941
+  Removed variable: bmi
+  Remaining variables (38): lr_5_ct, lr_tr_v_ct, lr_3_ct, lr_4_ct, lr_m_ct, lr_tr_nv_ct, lr_tr_e_ct, log_lr_5_size_ct, log_lr_tr_v_size_whole_ct, log_lr_tr_v_size_enhancing_ct, log_lr_3_size_ct, log_lr_4_size_ct, log_lr_m_size_ct, log_lr_tr_nv_size_ct, log_lr_tr_e_size_ct, log_afp, log_pivka, alb, log_tbil, cr, log_pt_inr, na, log_crp, age_lt, sex, diabetes, ckd_hd, hbv, hcv, image_lc, ald, masld, ldlt, pre_tx, tace, rfa, resection, rtx
+
+Iteration 2:
+  Raw C-index: 0.7159 (±0.0321)
+  Penalized Score: 0.6017
+  Removed variable: diabetes
+  Remaining variables (37): lr_5_ct, lr_tr_v_ct, lr_3_ct, lr_4_ct, lr_m_ct, lr_tr_nv_ct, lr_tr_e_ct, log_lr_5_size_ct, log_lr_tr_v_size_whole_ct, log_lr_tr_v_size_enhancing_ct, log_lr_3_size_ct, log_lr_4_size_ct, log_lr_m_size_ct, log_lr_tr_nv_size_ct, log_lr_tr_e_size_ct, log_afp, log_pivka, alb, log_tbil, cr, log_pt_inr, na, log_crp, age_lt, sex, ckd_hd, hbv, hcv, image_lc, ald, masld, ldlt, pre_tx, tace, rfa, resection, rtx
+
+Iteration 3:
+  Raw C-index: 0.7204 (±0.0316)
+  Penalized Score: 0.6092
+  Removed variable: lr_5_ct
+  Remaining variables (36): lr_tr_v_ct, lr_3_ct, lr_4_ct, lr_m_ct, lr_tr_nv_ct, lr_tr_e_ct, log_lr_5_size_ct, log_lr_tr_v_size_whole_ct, log_lr_tr_v_size_enhancing_ct, log_lr_3_size_ct, log_lr_4_size_ct, log_lr_m_size_ct, log_lr_tr_nv_size_ct, log_lr_tr_e_size_ct, log_afp, log_pivka, alb, log_tbil, cr, log_pt_inr, na, log_crp, age_lt, sex, ckd_hd, hbv, hcv, image_lc, ald, masld, ldlt, pre_tx, tace, rfa, resection, rtx
+
+Iteration 4:
+  Raw C-index: 0.7240 (±0.0315)
+  Penalized Score: 0.6159
+  Removed variable: image_lc
+  Remaining variables (35): lr_tr_v_ct, lr_3_ct, lr_4_ct, lr_m_ct, lr_tr_nv_ct, lr_tr_e_ct, log_lr_5_size_ct, log_lr_tr_v_size_whole_ct, log_lr_tr_v_size_enhancing_ct, log_lr_3_size_ct, log_lr_4_size_ct, log_lr_m_size_ct, log_lr_tr_nv_size_ct, log_lr_tr_e_size_ct, log_afp, log_pivka, alb, log_tbil, cr, log_pt_inr, na, log_crp, age_lt, sex, ckd_hd, hbv, hcv, ald, masld, ldlt, pre_tx, tace, rfa, resection, rtx
+
+Iteration 5:
+  Raw C-index: 0.7274 (±0.0336)
+  Penalized Score: 0.6221
+  Removed variable: log_lr_tr_v_size_whole_ct
+  Remaining variables (34): lr_tr_v_ct, lr_3_ct, lr_4_ct, lr_m_ct, lr_tr_nv_ct, lr_tr_e_ct, log_lr_5_size_ct, log_lr_tr_v_size_enhancing_ct, log_lr_3_size_ct, log_lr_4_size_ct, log_lr_m_size_ct, log_lr_tr_nv_size_ct, log_lr_tr_e_size_ct, log_afp, log_pivka, alb, log_tbil, cr, log_pt_inr, na, log_crp, age_lt, sex, ckd_hd, hbv, hcv, ald, masld, ldlt, pre_tx, tace, rfa, resection, rtx
+
+Iteration 6:
+  Raw C-index: 0.7307 (±0.0345)
+  Penalized Score: 0.6282
+  Removed variable: pre_tx
+  Remaining variables (33): lr_tr_v_ct, lr_3_ct, lr_4_ct, lr_m_ct, lr_tr_nv_ct, lr_tr_e_ct, log_lr_5_size_ct, log_lr_tr_v_size_enhancing_ct, log_lr_3_size_ct, log_lr_4_size_ct, log_lr_m_size_ct, log_lr_tr_nv_size_ct, log_lr_tr_e_size_ct, log_afp, log_pivka, alb, log_tbil, cr, log_pt_inr, na, log_crp, age_lt, sex, ckd_hd, hbv, hcv, ald, masld, ldlt, tace, rfa, resection, rtx
+
+Iteration 7:
+  Raw C-index: 0.7335 (±0.0304)
+  Penalized Score: 0.6345
+  Removed variable: rfa
+  Remaining variables (32): lr_tr_v_ct, lr_3_ct, lr_4_ct, lr_m_ct, lr_tr_nv_ct, lr_tr_e_ct, log_lr_5_size_ct, log_lr_tr_v_size_enhancing_ct, log_lr_3_size_ct, log_lr_4_size_ct, log_lr_m_size_ct, log_lr_tr_nv_size_ct, log_lr_tr_e_size_ct, log_afp, log_pivka, alb, log_tbil, cr, log_pt_inr, na, log_crp, age_lt, sex, ckd_hd, hbv, hcv, ald, masld, ldlt, tace, resection, rtx
+
+Iteration 8:
+  Raw C-index: 0.7367 (±0.0312)
+  Penalized Score: 0.6405
+  Removed variable: lr_tr_nv_ct
+  Remaining variables (31): lr_tr_v_ct, lr_3_ct, lr_4_ct, lr_m_ct, lr_tr_e_ct, log_lr_5_size_ct, log_lr_tr_v_size_enhancing_ct, log_lr_3_size_ct, log_lr_4_size_ct, log_lr_m_size_ct, log_lr_tr_nv_size_ct, log_lr_tr_e_size_ct, log_afp, log_pivka, alb, log_tbil, cr, log_pt_inr, na, log_crp, age_lt, sex, ckd_hd, hbv, hcv, ald, masld, ldlt, tace, resection, rtx
+
+Iteration 9:
+  Raw C-index: 0.7393 (±0.0302)
+  Penalized Score: 0.6463
+  Removed variable: lr_tr_v_ct
+  Remaining variables (30): lr_3_ct, lr_4_ct, lr_m_ct, lr_tr_e_ct, log_lr_5_size_ct, log_lr_tr_v_size_enhancing_ct, log_lr_3_size_ct, log_lr_4_size_ct, log_lr_m_size_ct, log_lr_tr_nv_size_ct, log_lr_tr_e_size_ct, log_afp, log_pivka, alb, log_tbil, cr, log_pt_inr, na, log_crp, age_lt, sex, ckd_hd, hbv, hcv, ald, masld, ldlt, tace, resection, rtx
+
+Iteration 10:
+  Raw C-index: 0.7409 (±0.0302)
+  Penalized Score: 0.6509
+  Removed variable: log_lr_tr_e_size_ct
+  Remaining variables (29): lr_3_ct, lr_4_ct, lr_m_ct, lr_tr_e_ct, log_lr_5_size_ct, log_lr_tr_v_size_enhancing_ct, log_lr_3_size_ct, log_lr_4_size_ct, log_lr_m_size_ct, log_lr_tr_nv_size_ct, log_afp, log_pivka, alb, log_tbil, cr, log_pt_inr, na, log_crp, age_lt, sex, ckd_hd, hbv, hcv, ald, masld, ldlt, tace, resection, rtx
+
+Iteration 11:
+  Raw C-index: 0.7433 (±0.0284)
+  Penalized Score: 0.6564
+  Removed variable: lr_tr_e_ct
+  Remaining variables (28): lr_3_ct, lr_4_ct, lr_m_ct, log_lr_5_size_ct, log_lr_tr_v_size_enhancing_ct, log_lr_3_size_ct, log_lr_4_size_ct, log_lr_m_size_ct, log_lr_tr_nv_size_ct, log_afp, log_pivka, alb, log_tbil, cr, log_pt_inr, na, log_crp, age_lt, sex, ckd_hd, hbv, hcv, ald, masld, ldlt, tace, resection, rtx
+
+Iteration 12:
+  Raw C-index: 0.7446 (±0.0273)
+  Penalized Score: 0.6609
+  Removed variable: masld
+  Remaining variables (27): lr_3_ct, lr_4_ct, lr_m_ct, log_lr_5_size_ct, log_lr_tr_v_size_enhancing_ct, log_lr_3_size_ct, log_lr_4_size_ct, log_lr_m_size_ct, log_lr_tr_nv_size_ct, log_afp, log_pivka, alb, log_tbil, cr, log_pt_inr, na, log_crp, age_lt, sex, ckd_hd, hbv, hcv, ald, ldlt, tace, resection, rtx
+
+Iteration 13:
+  Raw C-index: 0.7462 (±0.0265)
+  Penalized Score: 0.6656
+  Removed variable: rtx
+  Remaining variables (26): lr_3_ct, lr_4_ct, lr_m_ct, log_lr_5_size_ct, log_lr_tr_v_size_enhancing_ct, log_lr_3_size_ct, log_lr_4_size_ct, log_lr_m_size_ct, log_lr_tr_nv_size_ct, log_afp, log_pivka, alb, log_tbil, cr, log_pt_inr, na, log_crp, age_lt, sex, ckd_hd, hbv, hcv, ald, ldlt, tace, resection
+
+Iteration 14:
+  Raw C-index: 0.7474 (±0.0275)
+  Penalized Score: 0.6696
+  Removed variable: resection
+  Remaining variables (25): lr_3_ct, lr_4_ct, lr_m_ct, log_lr_5_size_ct, log_lr_tr_v_size_enhancing_ct, log_lr_3_size_ct, log_lr_4_size_ct, log_lr_m_size_ct, log_lr_tr_nv_size_ct, log_afp, log_pivka, alb, log_tbil, cr, log_pt_inr, na, log_crp, age_lt, sex, ckd_hd, hbv, hcv, ald, ldlt, tace
+
+Iteration 15:
+  Raw C-index: 0.7492 (±0.0290)
+  Penalized Score: 0.6743
+  Removed variable: hcv
+  Remaining variables (24): lr_3_ct, lr_4_ct, lr_m_ct, log_lr_5_size_ct, log_lr_tr_v_size_enhancing_ct, log_lr_3_size_ct, log_lr_4_size_ct, log_lr_m_size_ct, log_lr_tr_nv_size_ct, log_afp, log_pivka, alb, log_tbil, cr, log_pt_inr, na, log_crp, age_lt, sex, ckd_hd, hbv, ald, ldlt, tace
+
+Iteration 16:
+  Raw C-index: 0.7515 (±0.0320)
+  Penalized Score: 0.6793
+  Removed variable: hbv
+  Remaining variables (23): lr_3_ct, lr_4_ct, lr_m_ct, log_lr_5_size_ct, log_lr_tr_v_size_enhancing_ct, log_lr_3_size_ct, log_lr_4_size_ct, log_lr_m_size_ct, log_lr_tr_nv_size_ct, log_afp, log_pivka, alb, log_tbil, cr, log_pt_inr, na, log_crp, age_lt, sex, ckd_hd, ald, ldlt, tace
+
+Iteration 17:
+  Raw C-index: 0.7529 (±0.0328)
+  Penalized Score: 0.6836
+  Removed variable: log_tbil
+  Remaining variables (22): lr_3_ct, lr_4_ct, lr_m_ct, log_lr_5_size_ct, log_lr_tr_v_size_enhancing_ct, log_lr_3_size_ct, log_lr_4_size_ct, log_lr_m_size_ct, log_lr_tr_nv_size_ct, log_afp, log_pivka, alb, cr, log_pt_inr, na, log_crp, age_lt, sex, ckd_hd, ald, ldlt, tace
+
+Iteration 18:
+  Raw C-index: 0.7535 (±0.0340)
+  Penalized Score: 0.6871
+  Removed variable: na
+  Remaining variables (21): lr_3_ct, lr_4_ct, lr_m_ct, log_lr_5_size_ct, log_lr_tr_v_size_enhancing_ct, log_lr_3_size_ct, log_lr_4_size_ct, log_lr_m_size_ct, log_lr_tr_nv_size_ct, log_afp, log_pivka, alb, cr, log_pt_inr, log_crp, age_lt, sex, ckd_hd, ald, ldlt, tace
+
+Iteration 19:
+  Raw C-index: 0.7541 (±0.0338)
+  Penalized Score: 0.6907
+  Removed variable: lr_4_ct
+  Remaining variables (20): lr_3_ct, lr_m_ct, log_lr_5_size_ct, log_lr_tr_v_size_enhancing_ct, log_lr_3_size_ct, log_lr_4_size_ct, log_lr_m_size_ct, log_lr_tr_nv_size_ct, log_afp, log_pivka, alb, cr, log_pt_inr, log_crp, age_lt, sex, ckd_hd, ald, ldlt, tace
+
+Iteration 20:
+  Raw C-index: 0.7588 (±0.0379)
+  Penalized Score: 0.6980
+  Removed variable: log_lr_4_size_ct
+  Remaining variables (19): lr_3_ct, lr_m_ct, log_lr_5_size_ct, log_lr_tr_v_size_enhancing_ct, log_lr_3_size_ct, log_lr_m_size_ct, log_lr_tr_nv_size_ct, log_afp, log_pivka, alb, cr, log_pt_inr, log_crp, age_lt, sex, ckd_hd, ald, ldlt, tace
+
+Iteration 21:
+  Raw C-index: 0.7593 (±0.0403)
+  Penalized Score: 0.7013
+  Removed variable: ald
+  Remaining variables (18): lr_3_ct, lr_m_ct, log_lr_5_size_ct, log_lr_tr_v_size_enhancing_ct, log_lr_3_size_ct, log_lr_m_size_ct, log_lr_tr_nv_size_ct, log_afp, log_pivka, alb, cr, log_pt_inr, log_crp, age_lt, sex, ckd_hd, ldlt, tace
+
+Iteration 22:
+  Raw C-index: 0.7600 (±0.0404)
+  Penalized Score: 0.7050
+  Removed variable: cr
+  Remaining variables (17): lr_3_ct, lr_m_ct, log_lr_5_size_ct, log_lr_tr_v_size_enhancing_ct, log_lr_3_size_ct, log_lr_m_size_ct, log_lr_tr_nv_size_ct, log_afp, log_pivka, alb, log_pt_inr, log_crp, age_lt, sex, ckd_hd, ldlt, tace
+
+Iteration 23:
+  Raw C-index: 0.7611 (±0.0405)
+  Penalized Score: 0.7091
+  Removed variable: alb
+  Remaining variables (16): lr_3_ct, lr_m_ct, log_lr_5_size_ct, log_lr_tr_v_size_enhancing_ct, log_lr_3_size_ct, log_lr_m_size_ct, log_lr_tr_nv_size_ct, log_afp, log_pivka, log_pt_inr, log_crp, age_lt, sex, ckd_hd, ldlt, tace
+
+Iteration 24:
+  Raw C-index: 0.7604 (±0.0410)
+  Penalized Score: 0.7113
+  Removed variable: lr_m_ct
+  Remaining variables (15): lr_3_ct, log_lr_5_size_ct, log_lr_tr_v_size_enhancing_ct, log_lr_3_size_ct, log_lr_m_size_ct, log_lr_tr_nv_size_ct, log_afp, log_pivka, log_pt_inr, log_crp, age_lt, sex, ckd_hd, ldlt, tace
+
+Iteration 25:
+  Raw C-index: 0.7608 (±0.0514)
+  Penalized Score: 0.7136
+  Removed variable: tace
+  Remaining variables (14): lr_3_ct, log_lr_5_size_ct, log_lr_tr_v_size_enhancing_ct, log_lr_3_size_ct, log_lr_m_size_ct, log_lr_tr_nv_size_ct, log_afp, log_pivka, log_pt_inr, log_crp, age_lt, sex, ckd_hd, ldlt
+
+Iteration 26:
+  Raw C-index: 0.7610 (±0.0511)
+  Penalized Score: 0.7169
+  Removed variable: age_lt
+  Remaining variables (13): lr_3_ct, log_lr_5_size_ct, log_lr_tr_v_size_enhancing_ct, log_lr_3_size_ct, log_lr_m_size_ct, log_lr_tr_nv_size_ct, log_afp, log_pivka, log_pt_inr, log_crp, sex, ckd_hd, ldlt
+
+Iteration 27:
+  Raw C-index: 0.7602 (±0.0475)
+  Penalized Score: 0.7194
+  Removed variable: lr_3_ct
+  Remaining variables (12): log_lr_5_size_ct, log_lr_tr_v_size_enhancing_ct, log_lr_3_size_ct, log_lr_m_size_ct, log_lr_tr_nv_size_ct, log_afp, log_pivka, log_pt_inr, log_crp, sex, ckd_hd, ldlt
+
+Iteration 28:
+  Raw C-index: 0.7610 (±0.0314)
+  Penalized Score: 0.7249
+  Removed variable: log_lr_3_size_ct
+  Remaining variables (11): log_lr_5_size_ct, log_lr_tr_v_size_enhancing_ct, log_lr_m_size_ct, log_lr_tr_nv_size_ct, log_afp, log_pivka, log_pt_inr, log_crp, sex, ckd_hd, ldlt
+
+Iteration 29:
+  Raw C-index: 0.7612 (±0.0340)
+  Penalized Score: 0.7278
+  Removed variable: log_crp
+  Remaining variables (10): log_lr_5_size_ct, log_lr_tr_v_size_enhancing_ct, log_lr_m_size_ct, log_lr_tr_nv_size_ct, log_afp, log_pivka, log_pt_inr, sex, ckd_hd, ldlt
+
+Iteration 30:
+  Raw C-index: 0.7606 (±0.0340)
+  Penalized Score: 0.7302
+  Removed variable: ldlt
+  Remaining variables (9): log_lr_5_size_ct, log_lr_tr_v_size_enhancing_ct, log_lr_m_size_ct, log_lr_tr_nv_size_ct, log_afp, log_pivka, log_pt_inr, sex, ckd_hd
+
+COMPARISON WITH NON-PENALIZED APPROACH:
+Non-penalized would select based on raw C-index only.
+Penalized approach considers both performance and model complexity.
+This helps prevent overfitting and improves generalization.
+
+RECOMMENDATIONS:
+1. Validate selected model on external test set
+2. Consider clinical interpretability of selected variables
+3. Monitor for overfitting in deployment
+4. Consider ensemble methods for additional robustness

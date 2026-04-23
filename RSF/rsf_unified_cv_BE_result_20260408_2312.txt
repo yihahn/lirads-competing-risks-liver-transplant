@@ -1,0 +1,154 @@
+=== RSF Unified Cross-Validation Results ===
+
+INITIAL BASELINE (ALL VARIABLES):
+Mean Wolbers C-index: 0.7223 (SD = 0.0254)
+Number of variables: 39
+Variables: log_lr_5_size_ct, log_lr_tr_v_size_whole_ct, log_lr_tr_v_size_enhancing_ct, log_lr_3_size_ct, log_lr_4_size_ct, log_lr_m_size_ct, log_lr_tr_nv_size_ct, log_lr_tr_e_size_ct, log_afp, log_pivka, alb, log_tbil, cr, log_pt_inr, na, log_crp, age_lt, bmi, sex, diabetes, ckd_hd, hbv, hcv, image_lc, ald, masld, ldlt, pre_tx, tace, rfa, resection, rtx, lr_5_ct, lr_tr_v_ct, lr_3_ct, lr_4_ct, lr_m_ct, lr_tr_nv_ct, lr_tr_e_ct
+Initial parameters:
+  ntree: 1000
+  nodesize: 10
+
+
+OVERALL BEST MODEL:
+Mean Wolbers C-index: 0.7632 (SD = 0.0400)
+Selected at iteration: 21
+Number of variables: 18
+Selected variables: log_lr_5_size_ct, log_lr_tr_v_size_whole_ct, log_lr_tr_nv_size_ct, log_afp, log_pivka, cr, log_pt_inr, age_lt, ckd_hd, hbv, ald, ldlt, rfa, lr_5_ct, lr_tr_v_ct, lr_m_ct, lr_tr_nv_ct, lr_tr_e_ct
+
+Optimal parameters:
+  ntree: 500
+  nodesize: 10
+
+=== ITERATION DETAILS ===
+
+Iteration 1:
+  C-index: 0.7282 (SD: 0.0288)
+  Removed variable: bmi
+  Remaining variables (38): log_lr_5_size_ct, log_lr_tr_v_size_whole_ct, log_lr_tr_v_size_enhancing_ct, log_lr_3_size_ct, log_lr_4_size_ct, log_lr_m_size_ct, log_lr_tr_nv_size_ct, log_lr_tr_e_size_ct, log_afp, log_pivka, alb, log_tbil, cr, log_pt_inr, na, log_crp, age_lt, sex, diabetes, ckd_hd, hbv, hcv, image_lc, ald, masld, ldlt, pre_tx, tace, rfa, resection, rtx, lr_5_ct, lr_tr_v_ct, lr_3_ct, lr_4_ct, lr_m_ct, lr_tr_nv_ct, lr_tr_e_ct
+  Best parameters: ntree=1000, nodesize=10
+
+Iteration 2:
+  C-index: 0.7339 (SD: 0.0269)
+  Removed variable: na
+  Remaining variables (37): log_lr_5_size_ct, log_lr_tr_v_size_whole_ct, log_lr_tr_v_size_enhancing_ct, log_lr_3_size_ct, log_lr_4_size_ct, log_lr_m_size_ct, log_lr_tr_nv_size_ct, log_lr_tr_e_size_ct, log_afp, log_pivka, alb, log_tbil, cr, log_pt_inr, log_crp, age_lt, sex, diabetes, ckd_hd, hbv, hcv, image_lc, ald, masld, ldlt, pre_tx, tace, rfa, resection, rtx, lr_5_ct, lr_tr_v_ct, lr_3_ct, lr_4_ct, lr_m_ct, lr_tr_nv_ct, lr_tr_e_ct
+  Best parameters: ntree=500, nodesize=10
+
+Iteration 3:
+  C-index: 0.7372 (SD: 0.0288)
+  Removed variable: log_crp
+  Remaining variables (36): log_lr_5_size_ct, log_lr_tr_v_size_whole_ct, log_lr_tr_v_size_enhancing_ct, log_lr_3_size_ct, log_lr_4_size_ct, log_lr_m_size_ct, log_lr_tr_nv_size_ct, log_lr_tr_e_size_ct, log_afp, log_pivka, alb, log_tbil, cr, log_pt_inr, age_lt, sex, diabetes, ckd_hd, hbv, hcv, image_lc, ald, masld, ldlt, pre_tx, tace, rfa, resection, rtx, lr_5_ct, lr_tr_v_ct, lr_3_ct, lr_4_ct, lr_m_ct, lr_tr_nv_ct, lr_tr_e_ct
+  Best parameters: ntree=1000, nodesize=5
+
+Iteration 4:
+  C-index: 0.7400 (SD: 0.0301)
+  Removed variable: log_tbil
+  Remaining variables (35): log_lr_5_size_ct, log_lr_tr_v_size_whole_ct, log_lr_tr_v_size_enhancing_ct, log_lr_3_size_ct, log_lr_4_size_ct, log_lr_m_size_ct, log_lr_tr_nv_size_ct, log_lr_tr_e_size_ct, log_afp, log_pivka, alb, cr, log_pt_inr, age_lt, sex, diabetes, ckd_hd, hbv, hcv, image_lc, ald, masld, ldlt, pre_tx, tace, rfa, resection, rtx, lr_5_ct, lr_tr_v_ct, lr_3_ct, lr_4_ct, lr_m_ct, lr_tr_nv_ct, lr_tr_e_ct
+  Best parameters: ntree=1000, nodesize=5
+
+Iteration 5:
+  C-index: 0.7440 (SD: 0.0307)
+  Removed variable: alb
+  Remaining variables (34): log_lr_5_size_ct, log_lr_tr_v_size_whole_ct, log_lr_tr_v_size_enhancing_ct, log_lr_3_size_ct, log_lr_4_size_ct, log_lr_m_size_ct, log_lr_tr_nv_size_ct, log_lr_tr_e_size_ct, log_afp, log_pivka, cr, log_pt_inr, age_lt, sex, diabetes, ckd_hd, hbv, hcv, image_lc, ald, masld, ldlt, pre_tx, tace, rfa, resection, rtx, lr_5_ct, lr_tr_v_ct, lr_3_ct, lr_4_ct, lr_m_ct, lr_tr_nv_ct, lr_tr_e_ct
+  Best parameters: ntree=500, nodesize=5
+
+Iteration 6:
+  C-index: 0.7480 (SD: 0.0237)
+  Removed variable: rtx
+  Remaining variables (33): log_lr_5_size_ct, log_lr_tr_v_size_whole_ct, log_lr_tr_v_size_enhancing_ct, log_lr_3_size_ct, log_lr_4_size_ct, log_lr_m_size_ct, log_lr_tr_nv_size_ct, log_lr_tr_e_size_ct, log_afp, log_pivka, cr, log_pt_inr, age_lt, sex, diabetes, ckd_hd, hbv, hcv, image_lc, ald, masld, ldlt, pre_tx, tace, rfa, resection, lr_5_ct, lr_tr_v_ct, lr_3_ct, lr_4_ct, lr_m_ct, lr_tr_nv_ct, lr_tr_e_ct
+  Best parameters: ntree=500, nodesize=5
+
+Iteration 7:
+  C-index: 0.7516 (SD: 0.0282)
+  Removed variable: image_lc
+  Remaining variables (32): log_lr_5_size_ct, log_lr_tr_v_size_whole_ct, log_lr_tr_v_size_enhancing_ct, log_lr_3_size_ct, log_lr_4_size_ct, log_lr_m_size_ct, log_lr_tr_nv_size_ct, log_lr_tr_e_size_ct, log_afp, log_pivka, cr, log_pt_inr, age_lt, sex, diabetes, ckd_hd, hbv, hcv, ald, masld, ldlt, pre_tx, tace, rfa, resection, lr_5_ct, lr_tr_v_ct, lr_3_ct, lr_4_ct, lr_m_ct, lr_tr_nv_ct, lr_tr_e_ct
+  Best parameters: ntree=500, nodesize=5
+
+Iteration 8:
+  C-index: 0.7535 (SD: 0.0257)
+  Removed variable: diabetes
+  Remaining variables (31): log_lr_5_size_ct, log_lr_tr_v_size_whole_ct, log_lr_tr_v_size_enhancing_ct, log_lr_3_size_ct, log_lr_4_size_ct, log_lr_m_size_ct, log_lr_tr_nv_size_ct, log_lr_tr_e_size_ct, log_afp, log_pivka, cr, log_pt_inr, age_lt, sex, ckd_hd, hbv, hcv, ald, masld, ldlt, pre_tx, tace, rfa, resection, lr_5_ct, lr_tr_v_ct, lr_3_ct, lr_4_ct, lr_m_ct, lr_tr_nv_ct, lr_tr_e_ct
+  Best parameters: ntree=1000, nodesize=5
+
+Iteration 9:
+  C-index: 0.7533 (SD: 0.0263)
+  Removed variable: tace
+  Remaining variables (30): log_lr_5_size_ct, log_lr_tr_v_size_whole_ct, log_lr_tr_v_size_enhancing_ct, log_lr_3_size_ct, log_lr_4_size_ct, log_lr_m_size_ct, log_lr_tr_nv_size_ct, log_lr_tr_e_size_ct, log_afp, log_pivka, cr, log_pt_inr, age_lt, sex, ckd_hd, hbv, hcv, ald, masld, ldlt, pre_tx, rfa, resection, lr_5_ct, lr_tr_v_ct, lr_3_ct, lr_4_ct, lr_m_ct, lr_tr_nv_ct, lr_tr_e_ct
+  Best parameters: ntree=500, nodesize=10
+
+Iteration 10:
+  C-index: 0.7561 (SD: 0.0225)
+  Removed variable: lr_3_ct
+  Remaining variables (29): log_lr_5_size_ct, log_lr_tr_v_size_whole_ct, log_lr_tr_v_size_enhancing_ct, log_lr_3_size_ct, log_lr_4_size_ct, log_lr_m_size_ct, log_lr_tr_nv_size_ct, log_lr_tr_e_size_ct, log_afp, log_pivka, cr, log_pt_inr, age_lt, sex, ckd_hd, hbv, hcv, ald, masld, ldlt, pre_tx, rfa, resection, lr_5_ct, lr_tr_v_ct, lr_4_ct, lr_m_ct, lr_tr_nv_ct, lr_tr_e_ct
+  Best parameters: ntree=1000, nodesize=5
+
+Iteration 11:
+  C-index: 0.7549 (SD: 0.0232)
+  Removed variable: lr_4_ct
+  Remaining variables (28): log_lr_5_size_ct, log_lr_tr_v_size_whole_ct, log_lr_tr_v_size_enhancing_ct, log_lr_3_size_ct, log_lr_4_size_ct, log_lr_m_size_ct, log_lr_tr_nv_size_ct, log_lr_tr_e_size_ct, log_afp, log_pivka, cr, log_pt_inr, age_lt, sex, ckd_hd, hbv, hcv, ald, masld, ldlt, pre_tx, rfa, resection, lr_5_ct, lr_tr_v_ct, lr_m_ct, lr_tr_nv_ct, lr_tr_e_ct
+  Best parameters: ntree=500, nodesize=5
+
+Iteration 12:
+  C-index: 0.7567 (SD: 0.0293)
+  Removed variable: log_lr_3_size_ct
+  Remaining variables (27): log_lr_5_size_ct, log_lr_tr_v_size_whole_ct, log_lr_tr_v_size_enhancing_ct, log_lr_4_size_ct, log_lr_m_size_ct, log_lr_tr_nv_size_ct, log_lr_tr_e_size_ct, log_afp, log_pivka, cr, log_pt_inr, age_lt, sex, ckd_hd, hbv, hcv, ald, masld, ldlt, pre_tx, rfa, resection, lr_5_ct, lr_tr_v_ct, lr_m_ct, lr_tr_nv_ct, lr_tr_e_ct
+  Best parameters: ntree=500, nodesize=5
+
+Iteration 13:
+  C-index: 0.7565 (SD: 0.0262)
+  Removed variable: log_lr_m_size_ct
+  Remaining variables (26): log_lr_5_size_ct, log_lr_tr_v_size_whole_ct, log_lr_tr_v_size_enhancing_ct, log_lr_4_size_ct, log_lr_tr_nv_size_ct, log_lr_tr_e_size_ct, log_afp, log_pivka, cr, log_pt_inr, age_lt, sex, ckd_hd, hbv, hcv, ald, masld, ldlt, pre_tx, rfa, resection, lr_5_ct, lr_tr_v_ct, lr_m_ct, lr_tr_nv_ct, lr_tr_e_ct
+  Best parameters: ntree=1000, nodesize=5
+
+Iteration 14:
+  C-index: 0.7573 (SD: 0.0254)
+  Removed variable: log_lr_4_size_ct
+  Remaining variables (25): log_lr_5_size_ct, log_lr_tr_v_size_whole_ct, log_lr_tr_v_size_enhancing_ct, log_lr_tr_nv_size_ct, log_lr_tr_e_size_ct, log_afp, log_pivka, cr, log_pt_inr, age_lt, sex, ckd_hd, hbv, hcv, ald, masld, ldlt, pre_tx, rfa, resection, lr_5_ct, lr_tr_v_ct, lr_m_ct, lr_tr_nv_ct, lr_tr_e_ct
+  Best parameters: ntree=1000, nodesize=5
+
+Iteration 15:
+  C-index: 0.7581 (SD: 0.0236)
+  Removed variable: hcv
+  Remaining variables (24): log_lr_5_size_ct, log_lr_tr_v_size_whole_ct, log_lr_tr_v_size_enhancing_ct, log_lr_tr_nv_size_ct, log_lr_tr_e_size_ct, log_afp, log_pivka, cr, log_pt_inr, age_lt, sex, ckd_hd, hbv, ald, masld, ldlt, pre_tx, rfa, resection, lr_5_ct, lr_tr_v_ct, lr_m_ct, lr_tr_nv_ct, lr_tr_e_ct
+  Best parameters: ntree=500, nodesize=5
+
+Iteration 16:
+  C-index: 0.7577 (SD: 0.0335)
+  Removed variable: log_lr_tr_v_size_enhancing_ct
+  Remaining variables (23): log_lr_5_size_ct, log_lr_tr_v_size_whole_ct, log_lr_tr_nv_size_ct, log_lr_tr_e_size_ct, log_afp, log_pivka, cr, log_pt_inr, age_lt, sex, ckd_hd, hbv, ald, masld, ldlt, pre_tx, rfa, resection, lr_5_ct, lr_tr_v_ct, lr_m_ct, lr_tr_nv_ct, lr_tr_e_ct
+  Best parameters: ntree=500, nodesize=10
+
+Iteration 17:
+  C-index: 0.7598 (SD: 0.0392)
+  Removed variable: resection
+  Remaining variables (22): log_lr_5_size_ct, log_lr_tr_v_size_whole_ct, log_lr_tr_nv_size_ct, log_lr_tr_e_size_ct, log_afp, log_pivka, cr, log_pt_inr, age_lt, sex, ckd_hd, hbv, ald, masld, ldlt, pre_tx, rfa, lr_5_ct, lr_tr_v_ct, lr_m_ct, lr_tr_nv_ct, lr_tr_e_ct
+  Best parameters: ntree=500, nodesize=10
+
+Iteration 18:
+  C-index: 0.7615 (SD: 0.0341)
+  Removed variable: masld
+  Remaining variables (21): log_lr_5_size_ct, log_lr_tr_v_size_whole_ct, log_lr_tr_nv_size_ct, log_lr_tr_e_size_ct, log_afp, log_pivka, cr, log_pt_inr, age_lt, sex, ckd_hd, hbv, ald, ldlt, pre_tx, rfa, lr_5_ct, lr_tr_v_ct, lr_m_ct, lr_tr_nv_ct, lr_tr_e_ct
+  Best parameters: ntree=500, nodesize=5
+
+Iteration 19:
+  C-index: 0.7605 (SD: 0.0388)
+  Removed variable: pre_tx
+  Remaining variables (20): log_lr_5_size_ct, log_lr_tr_v_size_whole_ct, log_lr_tr_nv_size_ct, log_lr_tr_e_size_ct, log_afp, log_pivka, cr, log_pt_inr, age_lt, sex, ckd_hd, hbv, ald, ldlt, rfa, lr_5_ct, lr_tr_v_ct, lr_m_ct, lr_tr_nv_ct, lr_tr_e_ct
+  Best parameters: ntree=1000, nodesize=10
+
+Iteration 20:
+  C-index: 0.7606 (SD: 0.0408)
+  Removed variable: log_lr_tr_e_size_ct
+  Remaining variables (19): log_lr_5_size_ct, log_lr_tr_v_size_whole_ct, log_lr_tr_nv_size_ct, log_afp, log_pivka, cr, log_pt_inr, age_lt, sex, ckd_hd, hbv, ald, ldlt, rfa, lr_5_ct, lr_tr_v_ct, lr_m_ct, lr_tr_nv_ct, lr_tr_e_ct
+  Best parameters: ntree=500, nodesize=10
+
+Iteration 21:
+  C-index: 0.7632 (SD: 0.0400)
+  Removed variable: sex
+  Remaining variables (18): log_lr_5_size_ct, log_lr_tr_v_size_whole_ct, log_lr_tr_nv_size_ct, log_afp, log_pivka, cr, log_pt_inr, age_lt, ckd_hd, hbv, ald, ldlt, rfa, lr_5_ct, lr_tr_v_ct, lr_m_ct, lr_tr_nv_ct, lr_tr_e_ct
+  Best parameters: ntree=500, nodesize=10
+
+Iteration 22:
+  C-index: 0.7612 (SD: 0.0377)
+  Removed variable: rfa
+  Remaining variables (17): log_lr_5_size_ct, log_lr_tr_v_size_whole_ct, log_lr_tr_nv_size_ct, log_afp, log_pivka, cr, log_pt_inr, age_lt, ckd_hd, hbv, ald, ldlt, lr_5_ct, lr_tr_v_ct, lr_m_ct, lr_tr_nv_ct, lr_tr_e_ct
+  Best parameters: ntree=1000, nodesize=5
