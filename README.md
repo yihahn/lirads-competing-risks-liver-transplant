@@ -40,7 +40,7 @@ R version 4.4.3
 ```
 .
 ├── FG/                                         # Fine-Gray model
-│   ├── main_fg.r                               # Model fitting
+│   ├── main_fg.r                               # Model fitting and evaluation
 │   ├── optim_fg_backward_eliminate_custom_penalty.r  # Model training
 │   ├── eval_fg_boot.r                          # Bootstrap evaluation
 │   ├── fg_conditional_perm_vimp_tdAUC.r        # Variable importance (tdAUROC)
@@ -50,7 +50,7 @@ R version 4.4.3
 │   └── plus_ald_subanalysis_boot.r             # ALD subgroup bootstrap
 │
 ├── RSF/                                        # Random Survival Forest model
-│   ├── main_rsf.r                              # Model fitting
+│   ├── main_rsf.r                              # Model fitting & evaluation
 │   ├── optim_rsf_backward_eliminate.r          # Model training
 │   ├── eval_rsf_boot.r                         # Bootstrap evaluation
 │   ├── rsf_conditional_perm_vimp_tdAUC.r       # Variable importance (tdAUROC)
@@ -154,7 +154,7 @@ For data access inquiries, please contact the corresponding authors.
 
 ## Usage
 
-### 1. Model Training
+### 1. Model Fitting & Evaluation
 
 ```r
 # Fine-Gray model 
@@ -164,7 +164,7 @@ source("FG/main_fg.r")
 source("RSF/main_rsf.r")
 ```
 
-### 2. Variable Selection
+### 2. Model Training
 
 ```r
 # Fine-Gray: FG training with custom penalized backward elimination 
